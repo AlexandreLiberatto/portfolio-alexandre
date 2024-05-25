@@ -436,6 +436,44 @@ footer {
 
 @media (min-width: 768px) {
 
+    .menu-hamburguer {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .nav-responsive, .nav-responsive a {
+        display: none;
+    }
+
+    .home, .about {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .home-img, .about-img {
+        max-width: 35%;
+    }
+
+    .home-content, .about-content {
+        width: 50%;
+    }
+
+    .services-box {
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    .portifolio-container {
+        grid-template-columns: auto auto;
+    }
+
+    form .input-box input {
+        width: 49%;
+    }
+
 
     header {
         background-color: var(--color-03); /* Teste */
@@ -445,6 +483,15 @@ footer {
 
 @media (min-width: 992px) {
 
+    .home-img, .about-img {
+        max-width: 35%;
+    }
+
+    .services-container {
+        flex-direction: row;
+        gap: 1.2rem;
+    }
+
 
     header {
         background-color: var(--color-04); /* Teste */
@@ -453,6 +500,22 @@ footer {
 }
 
 @media (min-width: 1200px) {
+
+    .home-img, .about-img {
+        max-width: 25%;
+    }
+
+    .home-content h1 {
+        font-size: 2.7rem;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .portifolio-container {
+        grid-template-columns: auto auto auto;
+    }
 
 
     header {
