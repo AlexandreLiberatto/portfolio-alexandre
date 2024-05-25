@@ -36,7 +36,7 @@ body {
     color: var(--text-color);
 }
 
-header { /* configuração para deixar fixo no topo */
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -76,13 +76,104 @@ span {
     color: var(--main-color);
 }
 
-.home, about {
+.home, .about {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 
+.home-img {
+    border-right: solid 0.6rem var(--main-color);
+    border-bottom: solid 0.6rem var(--main-color);
+    border-image: linear-gradient(135deg, transparent 50%, var(--main-color)) 1;
+}
+
+.about-img {
+    border-left: solid 0.6rem var(--main-color);
+    border-bottom: solid 0.6rem var(--main-color);
+    border-image: linear-gradient(225deg, transparent 50%, var(--main-color)) 1;
+}
+
 .home-img img, .about-img img {
     width: 100%;
+}
+
+.about {
+    background-color: var(--bg-color-02);
+}
+
+.home-content, .about-content {
+    width: 45%;
+}
+
+.home-content h3, .about-content h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.home-content h1, .about-content h1 {
+    font-weight: 700;
+    line-height: 1.3rem;
+    font-size: 2.7rem;
+}
+
+.home-content p, .about-content p {
+    margin-top: 1.2rem;
+    text-align: justify;
+}
+
+.services h2,
+.portifolio h2,
+.contact h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.services-container .services-box {
+    padding: 2rem 1rem 2.5rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: solid 0.15rem var(--bg-color-01);
+    background-color: var(--bg-color-02);
+    transition: 0.5s ease;
+}
+
+.services-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 25rem;
+    margin-bottom: 1rem;
+}
+
+.services-container .services-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.01);
+}
+
+.services-box i {
+    font-size: 4.3rem;
+    color: var(--main-color);
+}
+
+.services-box h3 {
+    font-size: 1.5rem;
+}
+
+.services-box p {
+    margin: 0.5rem;
+    letter-spacing: 0.1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
