@@ -178,8 +178,75 @@ span {
     text-overflow: ellipsis;
 }
 
+.portifolio {
+    background-color: var(--bg-color-02);
+}
 
+.portifolio-container {
+    display: grid;
+    gap: 1.2rem;
+}
 
+.portifolio-box {
+    position: relative;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 0.6rem var(--bg-color-01);
+    overflow: hidden;
+    display: flex; 
+}
+
+.portifolio-box img {
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.portifolio-box img:hover {
+    transform: scale(1.1);
+} 
+
+.portifolio-box .portifolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(30rem);
+    transition: 0.5s ease;
+}
+
+.portifolio-box:hover .portifolio-layer {
+    transform: translateY(0);
+}
+
+.portifolio-layer h4 {
+    font-size: 1.8rem;
+}
+
+.portifolio-layer p {
+    margin: 0.2rem 0 0.5rem;
+}
+
+.portifolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portifolio-layer a i {
+    font-size: 1.2rem;
+    color: var(--bg-color-02);
+}
 
 /* ----button------ */
 
