@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
       emailjs.send(serviceID, templateID, templateParams).then(
         function (response) {
           console.log("ENVIADO!", response.status, response.text);
-          alert("Mensagem enviada com sucesso!");
+          alert("Obrigado pelo seu contato, lhe retornarei o mais breve possível!");
         },
         function (error) {
           console.log("FALHOU...", error);
-          alert("Falha ao enviar mensagem. Por favor, tente mais tarde.");
+          alert("Desculpa, houve um erro ao enviar a mensagem. Se preferir, entre em contato através do número: (48) 99160-4054");
         }
       );
     });
