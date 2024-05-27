@@ -24,7 +24,7 @@
   text-decoration: none;
   border: none;
   outline: none;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Efeito de rolagem suave */
 }
 
 html {
