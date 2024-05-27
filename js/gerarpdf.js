@@ -41,14 +41,6 @@ document.getElementById('download').addEventListener('click', function() {
 }); 
 
 
-/* =====menu===== */
-document.addEventListener('DOMContentLoaded', () => {
-    const menuHamburguer = document.querySelector('.menu-hamburguer');
-    const nav = document.querySelector('.nav');
-  
-    menuHamburguer.addEventListener('click', () => {
-      nav.classList.toggle('active');
-    });
-  });
+
   
 
