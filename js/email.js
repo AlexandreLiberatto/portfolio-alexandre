@@ -1,4 +1,4 @@
-/* ====Configura;'oes para o usu[ario envia os dados do form por e-mail==== */
+/* ====Configurações para o usuario envia os dados do form por e-mail ( emailjs )==== */
 
 document.addEventListener("DOMContentLoaded", function () {
   // Inicialize o EmailJS com o seu user ID
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const serviceID = "service_u2zw90i"; /* ==== (Gmail) ID do serviço ==== */
 
-      const templateID = "template_hi985re"; // Substitua pelo ID do seu template
+      const templateID = "template_hi985re"; // ID do seu template
 
       const templateParams = {
         nome: document.getElementById("nome").value,
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         function (response) {
           console.log("ENVIADO!", response.status, response.text);
           alert(
-            "Obrigado pelo seu contato, lhe retornarei o mais breve possível!"
+            "Obrigado pelo seu contato, retornarei o mais breve possível!"
           );
         },
         function (error) {
