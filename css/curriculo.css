@@ -1,9 +1,11 @@
+
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #323946;
 }
 #container {
     width: 80%;
@@ -36,4 +38,77 @@ h1, h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 5px;
     margin-bottom: 10px;
+}
+
+#download {
+    background-color: #333;
+    color: #fff;
+    padding: .4rem;
+    border-radius: .3rem;
+    text-decoration: none;
+}
+
+/* ====estilos header====== */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 1.1rem;
+    background-color:transparent;
+    display: flex;
+    justify-content: center; /* Alinha os itens à direita */
+    align-items: center;
+    z-index: 100;
+  }
+
+  
+/* Estilo base para os botões de navegação e download */
+.nav a,
+#download {
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    border: solid 2px #3cdf2e;
+    box-shadow: #323946 0 0 5px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Efeito de hover */
+.nav a:hover,
+#download:hover {
+    background-color: #2bb622;
+    color: #fff;
+    font-weight: 900;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav a,
+    #download {
+        padding: 0.4rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav a,
+    #download {
+        padding: 0.3rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Estilo da navegação para centralizar os links */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
