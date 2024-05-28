@@ -54,17 +54,24 @@ header {
     padding: 1.1rem;
     background-color: transparent;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     z-index: 100;
+}
+
+/* Estilos do contêiner dos botões */
+header .nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Estilo base para os botões de navegação e download */
 .nav a,
 #download {
-    padding: 0.6rem 1.2rem;
+    padding: 0.6rem;
     background-color: #fff;
-    border-radius: 0;
+    border-radius: .5rem;
    
     box-shadow:0 0 6px #3cdf2e;
     color: #333;
@@ -76,17 +83,6 @@ header {
     display: inline-block;
 }
 
-/* Removendo bordas arredondadas nos cantos internos */
-#download {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-#back {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-left: none;
-}
 
 /* Efeito de hover */
 .nav a:hover,
