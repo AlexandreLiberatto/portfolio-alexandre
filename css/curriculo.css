@@ -75,9 +75,6 @@ header .nav {
 #download {
     padding: 0.6rem;
     background-color: #fff;
-    border-radius: .5rem;
-   
-    box-shadow:0 0 6px #3cdf2e;
     color: #333;
     font-weight: 600;
     letter-spacing: 0.1rem;
@@ -87,6 +84,10 @@ header .nav {
     display: inline-block;
 }
 
+.nav a i {
+    font-size: 3rem;
+}
+
 
 /* Efeito de hover */
 .nav a:hover,
@@ -94,6 +95,8 @@ header .nav {
 #back:hover {
     background-color: #333;
     color: #3cdf2e;
+    border: solid 2px #3cdf2e;
+    border-radius: 0.5rem;
     font-weight: 900;
     transform: translateY(-3px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
@@ -121,6 +124,9 @@ header .nav {
         margin-top: 4rem;
     }
 
+    .nav a i {
+        font-size: 2.5rem;
+    }
    
 }
 
@@ -135,6 +141,10 @@ header .nav {
 
     h1 {
         margin-top: 3rem;
+    }
+
+    .nav a i {
+        font-size: 2rem;
     }
 
   
