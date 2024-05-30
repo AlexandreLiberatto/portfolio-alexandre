@@ -14,7 +14,7 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-h1, h2 {
+h1, h2, strong {
     color: #333;
 }
 
@@ -28,6 +28,10 @@ h1 {
 }
 .contact-info p {
     margin: 5px 0;
+}
+
+.contact-info p a {
+    color: blue;
 }
 .section {
     margin-bottom: 20px;
