@@ -5,15 +5,14 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #e2e6eefb;
+    color: #333;
+    background-color: #f4f4f4;
 }
 #container {
-    width: 80%;
-    margin: 0 auto;
+    max-width: 900px;
+    margin: auto;
     background: #fff;
-    color: #333;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h1 {
@@ -28,7 +27,7 @@ h1 {
     margin: 5px 0;
 }
 
-.contact-info p a {
+.contact p a {
     color: blue;
 }
 .section {
@@ -61,6 +60,20 @@ header {
     z-index: 100;
 }
 
+.header, .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.header h1, .footer p {
+    margin: 0;
+}
+
+.header {
+    margin-top: 4rem;
+}
+
 /* Estilos do contêiner dos botões */
 header .nav {
     width: 100%;
@@ -72,8 +85,8 @@ header .nav {
 .nav a,
 #download {
     padding: 0.6rem;
-    background-color: #fff;
-    color: #333;
+    background-color: transparent;
+    color: #3cdf2e;
     font-weight: 600;
     letter-spacing: 0.1rem;
     transition: all 0.3s ease;
@@ -124,6 +137,10 @@ header .nav {
 
     .nav a i {
         font-size: 2.5rem;
+    }
+
+    #container {
+        padding: 15px 10px;
     }
    
 }
